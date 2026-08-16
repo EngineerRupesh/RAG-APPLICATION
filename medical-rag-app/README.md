@@ -73,23 +73,7 @@ its dedicated service file. On the frontend, every component is
 presentational; all shared state and every backend call live in
 `app/page.js` and `lib/api.js` respectively.
 
-## 1. Quick start (recommended)
 
-You need **Python 3.10+** and **Node.js 18+** installed. Everything else
-is automated.
-
-**Linux / macOS:**
-```bash
-cd medical-rag-app
-chmod +x start.sh
-./start.sh
-```
-
-**Windows:**
-```
-cd medical-rag-app
-start.bat
-```
 
 The script sets up a Python virtual environment, installs backend
 dependencies, installs frontend `npm` packages, and on first run pauses so
@@ -100,7 +84,7 @@ automatically — every future run just launches straight away.
 Open **http://localhost:3000** for the app UI once it's running. The API
 itself runs at **http://localhost:8000**.
 
-## 1b. Manual setup (if you prefer doing it by hand)
+## 1. Manual setup (if you prefer doing it by hand)
 
 **Backend:**
 ```bash
