@@ -1,4 +1,4 @@
-# MedGrounded — Medical Assistant RAG Application
+# Medical Assistant RAG Application
 
 A production-shaped Retrieval-Augmented-Generation application that answers
 medical questions **only** using PDFs you upload. Text-only input (no
