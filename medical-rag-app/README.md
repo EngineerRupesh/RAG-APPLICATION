@@ -157,8 +157,7 @@ Interactive docs: **http://localhost:8000/docs**
    question/ground-truth pairs for your documents.
 3. Run:
    ```bash
-   cd evaluation
-   pip install -r requirements.txt
+   cd backend/evaluation
    python ragas_evaluation.py
    ```
 4. Scores (`faithfulness`, `answer_relevancy`, `context_precision`,
