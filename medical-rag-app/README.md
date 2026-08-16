@@ -207,12 +207,4 @@ Interactive docs: **http://localhost:8000/docs**
 - **Safety**: the system prompt restricts the LLM to the retrieved
   context only, and the UI always shows a "not medical advice" notice.
 
-## 6. Production checklist (before deploying for real use)
 
-- Put `ALLOWED_ORIGINS` (backend) behind your real frontend domain (not `*`).
-- Set `NEXT_PUBLIC_API_BASE_URL` (frontend) to your deployed API URL and
-  run `npm run build && npm start` instead of `npm run dev`.
-- Add authentication in front of `/api/*` if this will hold sensitive data.
-- Swap local file storage for object storage (S3/GCS) if you need multiple
-  backend replicas sharing one index.
-- Add request logging / rate limiting appropriate to your traffic.
