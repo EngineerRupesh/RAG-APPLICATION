@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   A couple of small things that are cleaner as plain CSS than Tailwind
+   utility soup: the reduced-motion override for the signature ECG mark,
+   and the page-level scroll lock (this is a single-screen chat app).
+============================================================================ */
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ecg-path {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
